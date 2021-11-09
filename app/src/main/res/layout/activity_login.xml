@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    app:layoutDescription="@xml/activity_login_scene"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+    <ImageView
+        android:id="@+id/login_qic_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:layout_marginTop="106dp"
+        app:srcCompat="@drawable/qic_logo"
+        android:layout_weight="1"
+        tools:targetApi="o" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_semibold"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/login_IDET"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/login_fields"
+        android:ems="10"
+        android:hint="@string/login_hint"
+        android:paddingStart="16dp"
+
+        android:inputType="textEmailAddress" />
+
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="@dimen/field_width"-->
+<!--        android:layout_height="@dimen/field_height"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        app:passwordToggleEnabled="true"-->
+
+<!--        android:layout_marginBottom="190dp">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/passwordET"-->
+<!--            android:background="@drawable/login_fields"-->
+<!--            android:hint="@string/pass_hint" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height"
+        android:background="@drawable/login_fields"
+        android:hint="@string/pass_hint"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"
+        android:longClickable="false"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp" />
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/show_pass_btn"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_alignEnd="@id/passwordET"-->
+<!--        android:layout_alignBottom="@id/passwordET"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginEnd="3dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:onClick="showHidePass"-->
+<!--        android:src="@drawable/ic_baseline_remove_red_eye_24"-->
+<!--        tools:ignore="OnClick" />-->
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/login_button_style"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="@string/login_hint" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/equinox_logo"/>
+
+
+
+
+</LinearLayout>
+

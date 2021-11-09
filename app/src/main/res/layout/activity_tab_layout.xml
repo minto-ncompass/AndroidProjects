@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabLayoutActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/wine_red"
+        app:tabTextColor="@color/TabLayoutNotSelectedColor"
+        app:tabIndicatorHeight="3dp"
+        app:tabIndicatorColor="@color/wine_red"
+        app:tabTextAppearance="@style/TabLayoutStyle"
+        android:id="@+id/tab_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/tab_layout"
+        android:background="@color/light_gray">
+
+        <TextView
+            android:id="@+id/no_of_requests"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_semibold"
+            android:text="All Request"
+            android:layout_marginStart="16dp"
+            android:textSize="17dp"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_marginTop="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout"
+        android:background="@color/light_gray"
+        android:id="@+id/view_pager2">
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="ALL REQUESTS"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:fontFamily="@font/inter_semibold"-->
+<!--            android:textSize="17dp"-->
+<!--            android:layout_marginTop="152dp"/>-->
+
+
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+
+
+
+</RelativeLayout>

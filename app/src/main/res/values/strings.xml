@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidUseCase</string>
+    <string name="welcome">Welcome to \n Quatar Insurance Group</string>
+    <string name="pass_hint">Password</string>
+    <string name="login_hint">Log In</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
